@@ -1,5 +1,5 @@
 body{
-background-color: rgb( 33, 33, 33 );
+background-color: rgb(  253, 241, 238  );
 font-family: georgia, times, serif;
 color: #F0FFFF;
 margin: 0;
@@ -18,7 +18,7 @@ margin: 0 auto;
 .header{
 background-color: rgb(102, 0, 204);
 color: white;
-padding: 2rem 0;
+padding: 1rem 0;
 position: fixed;
 left: 0;
 top: 0;
@@ -33,11 +33,16 @@ right: 0;
 display: flex;
 justify-content: space-between;
 align-items: center;
+flex-wrap: wrap;
 }
 
 .logo{
-letter-spacing: 5px;
+letter-spacing: 15px;
 font-size: 1.5em;
+}
+
+.menu-icon{
+display: none;
 }
 
 .navigation ul{
@@ -67,4 +72,56 @@ margin-top: 6rem;
 
 .main{
 padding-top:10rem;
+}
+
+.top-panel{
+background: #212121;
+padding: 10rem 5rem;
+left: 50px;
+}
+.circulo{
+width:200px;
+height:200px;
+background-color: #bab8b8;
+border-radius:100%;
+}
+.circulo > .img-radius{
+width:100%;
+height:100%;
+border-radius:100%;
+}
+
+
+
+@media only screen and (max-width: 767px){
+.menu-icon{
+display: block;
+cursor: pointer;
+padding: 0.5rem 1rem;
+}
+
+.navigation {
+width: 100%;
+margin-top:1rem;
+}
+.navigation ul{
+display: none;
+}
+.navigation ul.show{
+display: block;
+}
+
+.navigation ul li{
+display: block;
+}
+.navigation ul li a{
+display: block;
+padding: 0.5rem 0;
+transition: all 0.4s linear;
+border-radius: 5px;
+}
+    .navigation ul li a:hover{
+    background: #212121 ;
+    }
+
 }
