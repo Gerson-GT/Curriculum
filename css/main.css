@@ -16,7 +16,7 @@ margin: 0 auto;
 }
 
 .header{
-background-color: rgb(102, 0, 204);
+background-color: rgb( 33, 33, 33 );
 color: white;
 padding: 1rem 0;
 position: fixed;
@@ -29,6 +29,10 @@ right: 0;
   text-decoration: none;
   }
 
+#img-sup {
+
+}
+  
 .logo-nav-container{
 display: flex;
 justify-content: space-between;
@@ -75,7 +79,7 @@ padding-top:10rem;
 }
 
 .top-panel{
-background: #212121;
+background:  #1976d2 ;
 padding: 10rem 5rem;
 left: 50px;
 }
