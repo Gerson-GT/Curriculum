@@ -1,3 +1,71 @@
+@font-face{
+ font-family: Merriweather;
+ font-style: normal;
+ src: local('Merriweather-Regular'),
+      local('Merriweather Regular'),
+      url('../fonts/Merriweather-Regular.ttf') format('truetype');
+}
+@font-face{
+ font-family: Merriweather;
+ font-style: bold;
+ src: local('Merriweather-Bold'),
+      local('Merriweather Bold'),
+      url('../fonts/Merriweather-Bold.ttf') format('truetype');
+}
+@font-face{
+ font-family: Mulish;
+ src: local('Merriweather-Regular'),
+      local('Merriweather Regular'),
+      url('../fonts/Mulish-Regular.ttf') format('truetype');
+}
+@font-face{
+  font-family:Copse;
+  src: local('Copse'),
+       local('Copse-Regular'),
+       local('Copse Regular'),
+       url('../fonts/Copse-Regular.ttf') format('truetype');
+}
+
+
+/*Tipografias utilizadas*/
+.merriweather{
+font-family: Merriweather;
+font-style: normal;
+font-size: 26px;
+line-height: 33px;
+letter-spacing: 0.275em;
+color: #FFFFFF;
+}
+.mulish{
+font-family: Mulish;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 23px;
+letter-spacing: 0.275em;
+color: #FFFFFF;
+}
+.copse{
+font-family: Copse;
+font-style: normal;
+font-weight: normal;
+text-align:center;
+font-size: 33px;
+line-height: 41px;
+color: #BFBFBF; 
+}
+.copse-22{
+font-family: Copse;
+font-style: normal;
+font-weight: normal;
+text-align:center;
+font-size: 18px;
+line-height: 22px;
+color: #FAFFFE;
+}
+
+
+
 body{
 background-color: rgb(  253, 241, 238  );
 font-family: georgia, times, serif;
@@ -11,26 +79,24 @@ margin-botton: 1.6em;
 
 .container{
 width: 85%;
-max-width: 850px;
+max-width:90%;
 margin: 0 auto;
 }
 
 .header{
-background-color: rgb( 33, 33, 33 );
+background: #212121;
 color: white;
-padding: 1rem 0;
+/*height: 40px;*/ 
+padding: 0.7rem 0;
 position: fixed;
 left: 0;
 top: 0;
 right: 0;
 }
-  .header a{
-  color: white;
+
+.header a{
   text-decoration: none;
-  }
-
-#img-sup {
-
+  color: #e5dad8;
 }
   
 .logo-nav-container{
@@ -41,8 +107,8 @@ flex-wrap: wrap;
 }
 
 .logo{
-letter-spacing: 15px;
-font-size: 1.5em;
+  left: 100px;
+  text-decoration: none;
 }
 
 .menu-icon{
@@ -78,21 +144,41 @@ margin-top: 6rem;
 padding-top:10rem;
 }
 
+
+/*Panel superior del perfil & info*/
 .top-panel{
-background:  #1976d2 ;
-padding: 10rem 5rem;
-left: 50px;
+background: url(../img/fondo1_svg.svg);
+background-size:cover;
+background-position:center;
+left: 0%;
+right: 0%;
+top: 0%;
+height: 677px;
+bottom:78%; 
 }
-.circulo{
-width:200px;
-height:200px;
-background-color: #bab8b8;
-border-radius:100%;
+.foto-perfil{
+position: relative;
+width: 231px;
+height:231px;
+background: url(../img/foto-perfil.jpg);
+background-size:cover;
+background-position:center;
+transform: translate(-50%,-100%);
+left: 50%;
+top: 50%;
+border-radius: 130.5px;
 }
-.circulo > .img-radius{
-width:100%;
-height:100%;
-border-radius:100%;
+.top-panel h1{
+position: relative;
+transform:translate(-50%, 0%);
+left: 50%;
+top: 13%;
+}
+.top-panel h2{
+position: relative;
+transform:translate(-50%, 0%);
+left: 50%;
+top: 10%;
 }
 
 
